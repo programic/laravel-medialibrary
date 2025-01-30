@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-medialibrary` will be documented in this file
 
+## v2.0.0 - 2025-01-30
+
+**Full Changelog**: https://github.com/programic/laravel-medialibrary/compare/v1.0.10...v2.0.0
+
 ## 11.12.1 - 2025-01-13
 
 ### What's Changed
