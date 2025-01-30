@@ -1,5 +1,6 @@
 <?php
 
+use Programic\MediaLibrary\Conversions\Manipulations;
 use Spatie\Image\Enums\AlignPosition;
 use Spatie\Image\Enums\BorderType;
 use Spatie\Image\Enums\Constraint;
@@ -7,7 +8,6 @@ use Spatie\Image\Enums\CropPosition;
 use Spatie\Image\Enums\Fit;
 use Spatie\Image\Enums\FlipDirection;
 use Spatie\Image\Image;
-use Programic\MediaLibrary\Conversions\Manipulations;
 
 it('transforms parameters correctly', function () {
     // Mock the image object

@@ -67,7 +67,7 @@ trait InteractsWithMedia
 
     public function attachableMedia(): MorphToMany
     {
-        return $this->morphToMany(config('media-library.media_model'),'mediable');
+        return $this->morphToMany(config('media-library.media_model'), 'mediable');
     }
 
     /**

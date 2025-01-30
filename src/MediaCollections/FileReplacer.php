@@ -15,7 +15,9 @@ class FileReplacer extends FileAdder
         protected Media $originalMedia,
         protected ?Filesystem $filesystem
     ) {
-        if (! $this->originalMedia->attachable) throw new MediaCannotBeUpdated('Media is not attachable.');
+        if (! $this->originalMedia->attachable) {
+            throw new MediaCannotBeUpdated('Media is not attachable.');
+        }
 
         parent::__construct($filesystem);
     }

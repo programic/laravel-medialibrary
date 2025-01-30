@@ -2,8 +2,6 @@
 
 namespace Programic\MediaLibrary;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Programic\MediaLibrary\Conversions\Commands\RegenerateCommand;
 use Programic\MediaLibrary\MediaCollections\Commands\CleanCommand;
 use Programic\MediaLibrary\MediaCollections\Commands\ClearCommand;
@@ -12,6 +10,8 @@ use Programic\MediaLibrary\MediaCollections\Models\Media;
 use Programic\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
 use Programic\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
 use Programic\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class MediaLibraryServiceProvider extends PackageServiceProvider
 {
@@ -49,4 +49,3 @@ class MediaLibraryServiceProvider extends PackageServiceProvider
         });
     }
 }
-

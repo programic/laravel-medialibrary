@@ -438,7 +438,7 @@ class FileAdder
 
     protected function attachMedia(Media $media): void
     {
-        if ($this->subject && !$this->subject->exists) {
+        if ($this->subject && ! $this->subject->exists) {
             $this->subject->prepareToAttachMedia($media, $this);
 
             $class = $this->subject::class;
@@ -522,7 +522,9 @@ class FileAdder
 
     protected function getMediaCollection(string $collectionName): ?MediaCollection
     {
-        if (! $this->subject) return null;
+        if (! $this->subject) {
+            return null;
+        }
 
         $this->subject->registerMediaCollections();
 
