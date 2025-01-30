@@ -20,7 +20,7 @@ class FileReplacer extends FileAdder
         parent::__construct($filesystem);
     }
 
-    protected function processMediaItem(?HasMedia $model, Media $media, FileAdder $fileAdder)
+    protected function processMediaItem(?HasMedia $model, Media $media, FileAdder $fileAdder): void
     {
         parent::processMediaItem($model, $media, $fileAdder);
 
