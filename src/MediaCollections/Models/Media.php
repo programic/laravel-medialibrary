@@ -37,8 +37,8 @@ use Programic\MediaLibrary\Support\TemporaryDirectory;
 use Programic\MediaLibrary\Support\UrlGenerator\UrlGenerator;
 use Programic\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
 use Programic\MediaLibraryPro\Models\TemporaryUpload;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * @property string $uuid

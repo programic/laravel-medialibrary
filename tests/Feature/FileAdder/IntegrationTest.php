@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
-use Spatie\Image\Enums\BorderType;
 use Programic\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
 use Programic\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
 use Programic\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
@@ -17,6 +16,7 @@ use Programic\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
 use Programic\MediaLibrary\MediaCollections\Models\Media;
 use Programic\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
 use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use Spatie\Image\Enums\BorderType;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 it('can add an file to the default collection', function () {

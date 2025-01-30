@@ -2,8 +2,8 @@
 
 namespace Programic\MediaLibrary\Tests\TestSupport\TestModels;
 
-use Spatie\Image\Enums\Fit;
 use Programic\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Enums\Fit;
 
 class TestModelWithPreviewConversion extends TestModel
 {

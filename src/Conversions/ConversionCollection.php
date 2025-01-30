@@ -29,7 +29,9 @@ class ConversionCollection extends Collection
 
         $this->items = [];
 
-        if (!$media->attachable) $this->addConversionsFromRelatedModel($media);
+        if (! $media->attachable) {
+            $this->addConversionsFromRelatedModel($media);
+        }
 
         $this->addManipulationsFromDb($media);
 
@@ -51,6 +53,7 @@ class ConversionCollection extends Collection
     {
         if ($media->attachable) {
             $this->items = [];
+
             return;
         }
 

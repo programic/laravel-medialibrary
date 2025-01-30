@@ -4,10 +4,10 @@ namespace Programic\MediaLibrary\Conversions\Actions;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Spatie\Image\Exceptions\UnsupportedImageFormat;
-use Spatie\Image\Image;
 use Programic\MediaLibrary\Conversions\Conversion;
 use Programic\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\Image\Exceptions\UnsupportedImageFormat;
+use Spatie\Image\Image;
 
 class PerformManipulationsAction
 {

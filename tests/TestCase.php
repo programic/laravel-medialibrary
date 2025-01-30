@@ -9,7 +9,6 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\File;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Schema;
 use Programic\MediaLibrary\MediaLibraryServiceProvider;
 use Programic\MediaLibrary\Support\MediaLibraryPro;
 use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
@@ -22,6 +21,7 @@ use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultipleCon
 use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
 use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
 use Programic\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
+use Schema;
 use ZipArchive;
 
 abstract class TestCase extends Orchestra

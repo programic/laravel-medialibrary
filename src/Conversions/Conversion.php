@@ -4,10 +4,10 @@ namespace Programic\MediaLibrary\Conversions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Conditionable;
-use Spatie\ImageOptimizer\OptimizerChainFactory;
 use Programic\MediaLibrary\MediaCollections\Models\Media;
 use Programic\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
 use Programic\MediaLibrary\Support\FileNamer\FileNamer;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
 
 /** @mixin \Spatie\Image\Drivers\ImageDriver */
 class Conversion
